@@ -38,6 +38,7 @@ jobs:
         run: terraform plan -lock=false
         env:
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+        continue-on-error: true
     
     # Condicao para executar somente na branch main e push
       - name: Terraform Apply
