@@ -18,6 +18,7 @@ jobs:
     defaults:
       run:
         shell: bash
+        working-directory: C:\Users\016110631\Documents\Cloud\GCP\stack-data-pipeline-gcp\.github
     
     steps:
     
