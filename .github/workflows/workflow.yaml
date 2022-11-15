@@ -3,9 +3,9 @@ name: 'Terraform CI'
 on:
   push:
     branches:
-      - master
+    - master
     paths:
-      - '**.tf'
+     - '**.tf'
   pull_request:
 
 jobs:
@@ -21,11 +21,11 @@ jobs:
     
     # coleta a ultima imagem do repositorio
       - name: Checkout
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
     
     # cria a imagem docker
       - name: Setup Terraform
-      - uses: hashicorp/setup-terraform@v1
+        uses: hashicorp/setup-terraform@v1
 
       - name: Terraform Init
         run:  terraform init
