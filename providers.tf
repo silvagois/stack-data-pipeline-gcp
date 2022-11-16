@@ -1,6 +1,7 @@
 provider "google" {
     project = var.project_id
-    region  = var.region  
+    region  = var.region
+    storage_class = var.storage_class
 }
 terraform {
   backend "gcs"{

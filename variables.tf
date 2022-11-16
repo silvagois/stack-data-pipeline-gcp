@@ -7,3 +7,8 @@ variable "region" {
    type         = string
    default      = "Google cloud location of resources"
   }
+
+variable "storage_class" {
+   type         = string
+   default      = "Google cloud location of resources"
+  }
