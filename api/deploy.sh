@@ -1,0 +1,1 @@
+gcloud run deploy stack-data-pipeline-gcp --source . --region us-central1
